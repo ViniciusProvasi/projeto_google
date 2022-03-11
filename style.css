@@ -74,8 +74,7 @@ main{
     justify-content: center;
     flex-direction: column;
     padding: 20px;
-    position: relative;
-    
+    position: relative; 
 }
 .pesquisa > span{
     content: url(imagens/1093183.svg);
