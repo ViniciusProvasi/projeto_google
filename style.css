@@ -1,4 +1,10 @@
 @charset "UTF-8";
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
 *{
     margin: 0;
     padding: 0;
@@ -69,6 +75,7 @@ main{
     flex-direction: column;
     padding: 20px;
     position: relative;
+    
 }
 .pesquisa > span{
     content: url(imagens/1093183.svg);
@@ -85,7 +92,6 @@ main{
     border: 1px rgba(0, 0, 0, 0.267) solid;
     padding-left: 40px;
     margin: auto;
-
 }
 .areapesquisa:hover{
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.13);
