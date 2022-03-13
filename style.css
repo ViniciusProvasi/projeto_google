@@ -5,6 +5,17 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance:none;
 }
+@media screen and (max-width: 900px){
+    .navfooter{
+        max-width: 400px !important;
+        justify-content: space-evenly !important;
+        text-align: center !important;
+        padding: 5px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        margin: auto !important;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,12 +24,13 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 body{
     font-size: 14px;
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    min-width: 400px;
+    max-width: 1600px;
 }
 .navegação{
     display: flex;
@@ -86,11 +98,12 @@ main{
 .areapesquisa{
     display: flex;
     border-radius: 20px;
-    width: 560px;
     height: 45px;
     border: 1px rgba(0, 0, 0, 0.267) solid;
     padding-left: 40px;
     margin: auto;
+    min-width: 400px;
+    max-width: 900px;
 }
 .areapesquisa:hover{
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.13);
@@ -102,7 +115,6 @@ main{
 .logo{
     display: flex;
     padding: 0px;
-    
     justify-content: center;
 }
 .rodapepesquisa{
@@ -150,6 +162,14 @@ div > a {
     text-decoration: none;
     color:#70757a;
 }
+.navfooter{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 15px;
+    padding: 10px;
+    padding-left: 40px;
+}
 footer > .navegação > div {
     display: flex;
     padding: 20px;
@@ -162,7 +182,6 @@ footer > .navegação{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
 }
 .nav > a:hover{
     text-decoration: underline;
