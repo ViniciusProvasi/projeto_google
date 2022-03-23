@@ -6,9 +6,8 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance:none;
 }
 @media screen and (max-width: 900px){
-    body{
-        height: 97.7vh !important;
-        
+    .login{
+        margin-right: 13px !important;
     }
     .navfooter{
         max-width: 500px !important;
@@ -22,7 +21,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
     }
     .areapesquisa{
-        min-width: 450px !important;
+        max-width: 374px !important;
     }
     .navfooter1{
         display: flex;
@@ -35,13 +34,14 @@ input[type="search"]::-webkit-search-results-decoration {
         padding-bottom: 5px !important;
     }
     .navfooter1 > a{
-        padding-right: 15px !important;
+        padding-right: 5px !important;
     }
     .navfooter2 > a{
         padding-right: 15px !important;
     }
     .guia{
         display: flex;
+
         width: 50px !important;
         height: 40px !important;
         padding-bottom: 4px;
@@ -194,10 +194,13 @@ div > a {
 }
 .navfooter{
     display: flex;
-    padding: 10px;
+    padding: 15px;
     padding-left: 40px;
     gap: 40px;
     justify-content: space-between;
+}
+.navfooter1 > a{
+    padding-right: 25px;
 }
 .navfooter2 > a {
     padding-right: 10px;
