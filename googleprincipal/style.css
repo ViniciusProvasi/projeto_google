@@ -6,15 +6,46 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance:none;
 }
 @media screen and (max-width: 900px){
+    body{
+        height: 97.7vh !important;
+        
+    }
     .navfooter{
-        max-width: 400px !important;
+        max-width: 500px !important;
         justify-content: space-evenly !important;
         text-align: center !important;
-        padding: 5px !important;
+        padding: 10px !important;
         display: flex !important;
         flex-direction: column !important;
         margin: auto !important;
+        gap: 5px !important;
+
     }
+    .areapesquisa{
+        min-width: 450px !important;
+    }
+    .navfooter1{
+        display: flex;
+        padding: 3px !important;
+        gap: 10px !important;
+        justify-content: center;
+        padding-bottom: 30px !important;
+    }
+    .navfooter2{
+        padding-bottom: 5px !important;
+    }
+    .navfooter1 > a{
+        padding-right: 15px !important;
+    }
+    .navfooter2 > a{
+        padding-right: 15px !important;
+    }
+    .guia{
+        display: flex;
+        width: 50px !important;
+        height: 40px !important;
+        padding-bottom: 4px;
+   }
 }
 *{
     margin: 0;
@@ -89,7 +120,7 @@ main{
     position: relative; 
 }
 .pesquisa > span{
-    content: url(imagens/1093183.svg);
+    content: url(../imagens/1093183.svg);
     position: absolute;
     width: 16px;
     height: 24px;
@@ -102,8 +133,7 @@ main{
     border: 1px rgba(0, 0, 0, 0.267) solid;
     padding-left: 40px;
     margin: auto;
-    min-width: 400px;
-    max-width: 900px;
+    width: 500px;
 }
 .areapesquisa:hover{
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.13);
@@ -164,19 +194,13 @@ div > a {
 }
 .navfooter{
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 15px;
     padding: 10px;
     padding-left: 40px;
+    gap: 40px;
+    justify-content: space-between;
 }
-footer > .navegação > div {
-    display: flex;
-    padding: 20px;
-    padding-left: 40px;
-    gap: 15px;
-    justify-content: space-evenly;
-    
+.navfooter2 > a {
+    padding-right: 10px;
 }
 footer > .navegação{
     display: flex;
@@ -184,5 +208,11 @@ footer > .navegação{
     justify-content: space-between;
 }
 .nav > a:hover{
+    text-decoration: underline;
+}
+.navfooter1 > a:hover{
+    text-decoration: underline;
+}
+.navfooter2 > a:hover{
     text-decoration: underline;
 }
