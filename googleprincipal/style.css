@@ -6,6 +6,7 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance:none;
 }
 @media screen and (max-width: 900px){
+
     main{
        height: 50% !important;
     }
@@ -13,7 +14,7 @@ input[type="search"]::-webkit-search-results-decoration {
         margin-right: 13px !important;
     }
     .navfooter{
-        max-width: 500px !important;
+        max-width: 460px !important;
         justify-content: space-evenly !important;
         text-align: center !important;
         padding: 10px !important;
@@ -24,7 +25,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
     }
     .areapesquisa{
-        max-width: 374px !important;
+        max-width: 460px !important;
     }
     .navfooter1{
         display: flex;
